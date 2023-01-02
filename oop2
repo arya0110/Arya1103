@@ -1,0 +1,36 @@
+Write a C++ program create a calculator for an arithmetic operator (+, -, *, /). The program should 
+take two operands from user and performs the operation on those two operands depending upon 
+the operator entered by user. Use a switch statement to select the operation. Finally, display the 
+result.
+
+
+#include<iostream>                                          //including header files
+using namespace std;             //standard library
+int main()                                                  //initializing main function
+{
+char c;                                                     //variable declearation
+float n1,n2;
+     cout<<"Enter the operation to be perform\n +\t-\t*\t/\t";//operation to be performed
+     cin>>c;
+     cout<<"Enter first number:\t";                           //printing first number
+     cin>>n1;                                                 //scaning first number
+     cout<<"Enter second number:\t";                          //printing second number
+     cin>>n2;                                                 //scaning second number
+     
+     
+switch (c)                                                    //using switch case
+{
+     case'+':cout<<n1+n2<<"\n";
+     break;
+     case'-':cout<<n1-n2<<"\n";
+     break;
+     case'*':cout<<n1*n2<<"\n";
+     break;
+     case'/':cout<<n1/n2<<"\n";
+     break;
+
+     default: cout<<"Enter your valid choice";
+}
+return 0;
+}
+
